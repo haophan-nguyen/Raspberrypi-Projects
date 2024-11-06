@@ -1,0 +1,1 @@
+savedcmd_/home/mypi/workspace/Raspberrypi-Projects/my_test/module/00/00_hello_kernel.mod := printf '%s\n'   00_hello_kernel.o | awk '!x[$$0]++ { print("/home/mypi/workspace/Raspberrypi-Projects/my_test/module/00/"$$0) }' > /home/mypi/workspace/Raspberrypi-Projects/my_test/module/00/00_hello_kernel.mod
