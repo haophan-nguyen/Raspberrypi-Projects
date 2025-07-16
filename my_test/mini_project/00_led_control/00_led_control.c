@@ -191,6 +191,8 @@ class_err:
 
 static void __exit my_device_exit(void){
     gpio_free(mydev.led_gpio);
+    gpio_free(mydev.button_gpio);
+    free_irq(mydev.irq_nr, NULL);
     cdev_del(&mydev.cdev);
     device_destroy(mydev.dev_class, mydev.dev_nr);
     class_destroy(mydev.dev_class);
